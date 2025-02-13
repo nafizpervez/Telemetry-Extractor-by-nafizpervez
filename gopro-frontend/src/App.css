@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.header-text {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.sub-header {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0;
+  font-family: "Arial", sans-serif;
+  color: #7b7b7b;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Disable state for buttons */
+button:disabled {
+  background-color: #ccc;
+}
+
+input[type="file"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  /* Removed the custom file input styles */
+}
+
+.progress-container {
+  margin-top: 20px;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+}
+
+.checkmark {
+  animation: scaleIn 1s;
+  color: green;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.checkmark-icon {
+  color: green;
+  animation: checkmarkAnimation 1s ease-in-out;
+}
+
+@keyframes checkmarkAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button i {
+  margin-right: 5px;
+}
+
+/* Styling for reload and halt buttons */
+.reload-halt-button {
+  background-color: #f44336; /* Red color */
+}
+
+.reload-halt-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #7b7b7b; /* Light gray */
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .fa {
+  color: #7b7b7b; /* Light gray for the copyright icon */
+}
