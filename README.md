@@ -49,7 +49,7 @@ node server.js
 
 Ensure that you have the following installed:
 
-- **Node.js** (LTS version recommended)
+- **Node.js** (v20.15.0 Recommended)
 - **npm** (Node Package Manager)
 
 ## License
