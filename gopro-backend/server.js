@@ -111,9 +111,6 @@ app.post("/upload", upload.single("video"), async (req, res) => {
       `- GYRO CSV: http://localhost:5000/downloads/${videoName}_telemetry_data_GYRO.csv`
     );
 
-    await writeFileAsync("./out.json", JSON.stringify(extractedData));
-    console.log("Telemetry data saved to out.json");
-
     res.json({
       message: "CSV files generated successfully",
       files: [
@@ -130,6 +127,18 @@ app.post("/upload", upload.single("video"), async (req, res) => {
           url: `/downloads/${videoName}_telemetry_data_GYRO.csv`
         }
       ]
+    });
+
+    await writeFileAsync("./out.json", JSON.stringify(extractedData));
+    console.log("Telemetry data saved to out.json");
+
+    // Now delete the video file after processing
+    fs.unlink(videoPath, (err) => {
+      if (err) {
+        console.error("Error deleting video file:", err);
+      } else {
+        console.log(`Successfully deleted video file: ${videoPath}`);
+      }
     });
   } catch (error) {
     console.error("Error:", error);

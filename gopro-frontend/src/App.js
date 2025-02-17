@@ -38,7 +38,8 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://172.16.1.16:5000/upload",
+        // "http://172.16.1.16:5000/upload",
+        "http://localhost:5000/upload",
         formData,
         {
           headers: {
