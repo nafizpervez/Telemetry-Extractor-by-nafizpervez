@@ -87,9 +87,9 @@ def process_telemetry_data(accel_file, gps_file, gyro_file, output_file):
 
 # Example usage:
 # Provide paths to the accelerometer, GPS, and gyroscope data files, and the desired output file name
-accel_file = "D:/Office_Projects/Local_Projects/LGED_python_scripts/telemetry_extractor_by_NafizPervez/gopro-backend/downloads/GX019031_telemetry_data_ACCL.csv"
-gps_file = "D:/Office_Projects/Local_Projects/LGED_python_scripts/telemetry_extractor_by_NafizPervez/gopro-backend/downloads/GX019031_telemetry_data_GPS5.csv"
-gyro_file = "D:/Office_Projects/Local_Projects/LGED_python_scripts/telemetry_extractor_by_NafizPervez/gopro-backend/downloads/GX019031_telemetry_data_GYRO.csv"
-output_file = "D:/Office_Projects/Local_Projects/LGED_python_scripts/combined_telemetery_data_GX019030.csv"
+accel_file = "D:/Office_Projects/Local_Projects/LGED_solution_scripts/telemetry_extractor_by_NafizPervez_D_12_Feb_25/sample_csv/GX019027_telemetry_data_ACCL.csv"
+gps_file = "D:/Office_Projects/Local_Projects/LGED_solution_scripts/telemetry_extractor_by_NafizPervez_D_12_Feb_25/sample_csv/GX019027_telemetry_data_GPS5.csv"
+gyro_file = "D:/Office_Projects/Local_Projects/LGED_solution_scripts/telemetry_extractor_by_NafizPervez_D_12_Feb_25/sample_csv/GX019027_telemetry_data_GYRO.csv"
+output_file = "D:/Office_Projects/Local_Projects/LGED_solution_scripts/telemetry_extractor_by_NafizPervez_D_12_Feb_25/sample_csv/outFile_combined_GX019027.csv"
 
 process_telemetry_data(accel_file, gps_file, gyro_file, output_file)
